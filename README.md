@@ -95,3 +95,20 @@ npx vercel --prod
 ```
 
 Choisir l’espace personnel Hobby. Vercel attribue une adresse en `.vercel.app` ; un domaine acheté n’est pas nécessaire. `.vercel/` et les fichiers `.env` sont exclus de l’archive des sources.
+
+## Publication actuelle sur Vercel
+
+Portfolio public : https://amine-izmaoun-portfolio.vercel.app/
+
+Publié le 14 novembre 2026 sur l’offre Hobby, par envoi manuel des fichiers compilés. L’application GitHub Vercel n’est pas installée et aucun déploiement automatique n’est activé. Les `git push` ne modifient donc pas le site en ligne.
+
+Pour publier une nouvelle version :
+
+```bash
+npm ci
+npm run build
+```
+
+Dans Vercel, utiliser l’envoi de fichiers (« Drop to Deploy »), sélectionner le contenu de `dist/` et choisir le projet existant `amine-izmaoun-portfolio`. Le lien public reste associé à ce projet. Le dépôt GitHub fournit le code source depuis la page « Mentions et crédits ».
+
+Vérifications après publication : accueil public chargé et téléchargement du CV testé ; le PDF téléchargé est identique au fichier local (SHA-256).
