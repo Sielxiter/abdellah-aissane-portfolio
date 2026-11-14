@@ -1,0 +1,18 @@
+Ce portfolio est une version modifiée de DeveloperFolio.
+Projet d’origine : https://github.com/saadpasta/developerFolio
+Auteurs d’origine : Saad Pasta et les contributeurs DeveloperFolio.
+Licence d’origine conservée : GNU General Public License version 3 (LICENSE).
+
+Adaptations, novembre 2026 : contenu français pour Amine Izmaoun, sections et
+présentation personnalisées, migration React / Vite, suppression des exemples,
+intégrations distantes, collecte GitHub et dépendances inutilisées.
+Mise en page corrigée le 14 novembre 2026 pour conserver la structure du template.
+Styles SCSS, illustrations manOnTable.svg / developerActivity.svg et polices
+d’origine réutilisés. Adaptation des composants aux données vérifiées et à React 19.
+Le README original et ses attributions sont conservés dans docs/.
+Le logiciel est fourni sans garantie, selon les termes de la GPL.
+La licence du logiciel ne confère aucun droit supplémentaire sur le CV ou la photo.
+
+Icônes technologiques Devicon : https://github.com/devicons/devicon
+Licence MIT conservée dans public/icons/technologies/DEVICON-LICENSE.
+Les marques et logos appartiennent à leurs titulaires respectifs.

@@ -1,407 +1,206 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
-};
-
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
-const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
-};
-
-// Social Media Links
-
-const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
-};
-
-// Skills Section
-
-const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+// Informations vérifiées dans le CV et les dépôts ; détails dans docs/SOURCES.md.
+// Aucun appel GitHub ni secret n'est nécessaire pour afficher le portfolio.
+export const portfolio = {
+  name: "Amine Izmaoun",
+  specialty: "Génie logiciel & DevOps",
+  status: "À la recherche d’un stage PFE",
+  location: "Casablanca, Maroc",
+  email: "beleamine84@gmail.com",
+  phone: "+212 708 91 92 05",
+  phoneHref: "tel:+212708919205",
+  github: "https://github.com/izmaoun",
+  linkedin: "https://www.linkedin.com/in/amine-izmaoun-5ab61232a/",
+  cv: "CV_IZMAOUN_Amine.pdf",
+  photo: "images/amine-izmaoun-portrait.jpg",
+  intro:
+    "Étudiant ingénieur en génie informatique à l’ENSA Marrakech, je développe des applications Java / Spring Boot et travaille sur l’automatisation de leur déploiement.",
+  about: [
+    "Mon parcours à l’ENSA Marrakech m’a conduit vers le génie logiciel et le DevOps. J’aime comprendre un besoin métier, le traduire en services et suivre une application jusqu’à son déploiement.",
+    "Avec Java et Spring Boot, je m’intéresse particulièrement aux architectures microservices, à la sécurité des API et à la communication entre services. Mon stage PFA chez Code212 m’a permis d’associer ce travail à la conteneurisation, à l’intégration continue et à l’observabilité.",
+    "Pour mon PFE, je souhaite contribuer à un projet qui relie développement logiciel et pratiques DevOps, au sein d’une équipe auprès de laquelle continuer à apprendre."
+  ],
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Education Section
-
-const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      title: "Back-end & architecture",
+      items: [
+        "Java",
+        "Spring Boot",
+        "Spring Cloud",
+        "Spring Security",
+        "Keycloak",
+        "Microservices",
+        "Hibernate",
+        "Kafka"
       ]
     },
+    {title: "Interfaces", items: ["Angular", "TypeScript", "React", "JavaFX"]},
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      title: "Bases de données",
+      items: ["PostgreSQL", "MySQL", "MongoDB", "SQL", "PL/SQL"]
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      title: "DevOps & cloud",
+      items: [
+        "Git",
+        "Docker",
+        "Docker Compose",
+        "Jenkins",
+        "SonarQube",
+        "Trivy",
+        "Kubernetes",
+        "Helm",
+        "Nginx",
+        "Terraform",
+        "Prometheus",
+        "Grafana",
+        "AWS"
+      ]
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      company: "Code212",
+      role: "Stage PFA · Plateforme microservices & DevOps",
+      period: "Juin – septembre 2026",
+      summary:
+        "Conception, développement et déploiement d’une plateforme de réservation des ressources du centre Code212.",
+      missions: [
+        "Développement de cinq microservices Spring Boot : Config, Eureka, Gateway, Resource et Reservation. Communication avec OpenFeign et Eureka, et bases PostgreSQL séparées par service.",
+        "Sécurisation des API avec Keycloak, OAuth2 / OIDC, JWT et RBAC ; validation des jetons dans la Gateway et les services avec Spring Security 6.",
+        "Développement d’API REST documentées avec OpenAPI 3 ; persistance avec Spring Data JPA, Hibernate et MapStruct.",
+        "Automatisation d’un pipeline Jenkins : compilation Maven, tests, SonarQube, Trivy et publication des images Docker, déclenché par webhook Git.",
+        "Conteneurisation Docker multi-stage, environnement Docker Compose avec contrôles de santé et déploiement Kubernetes sur Minikube via Ingress Nginx.",
+        "Provisionnement Terraform, déploiements Helm et monitoring avec Prometheus et Grafana."
+      ],
+      technologies: [
+        "Java 17",
+        "Spring Boot 3.2.5",
+        "Spring Cloud",
+        "Spring Security 6",
+        "PostgreSQL 16",
+        "Keycloak 23",
+        "Maven",
+        "Git",
+        "Jenkins",
+        "SonarQube",
+        "Trivy",
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "Helm",
+        "Nginx",
+        "Terraform",
+        "Prometheus",
+        "Grafana"
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
-  ]
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  ],
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      name: "Code212",
+      label: "Réservation de ressources",
+      context: "Stage PFA · 2026",
+      category: "Microservices / DevOps",
+      need: "Permettre au centre Code212 de gérer ses ressources et leurs réservations.",
+      contribution:
+        "Développement des services de ressources et de réservation, intégration de la sécurité et de l’environnement conteneurisé, dans le cadre de mon stage PFA.",
+      features: [
+        "Gestion des ressources et des réservations",
+        "Contrôle des conflits de réservation",
+        "Authentification Keycloak et API documentées",
+        "Découverte de services et routage centralisé"
+      ],
+      technologies: [
+        "Java 17",
+        "Spring Boot",
+        "Spring Cloud",
+        "PostgreSQL",
+        "Keycloak",
+        "Docker Compose"
+      ],
+      github: "https://github.com/izmaoun/Code212",
+      demo: null
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      name: "Marketplace B2B",
+      label: "Entreprises & freelances",
+      context: "Projet de fin de semestre · 2026",
+      category: "Microservices / Temps réel",
+      need: "Mettre en relation des entreprises et des freelances autour de missions et de candidatures.",
+      contribution:
+        "Dans ce projet collectif, développement du service de messagerie WebSocket et connexion des services entreprise, freelance, administration et missions. Ces apports sont identifiables dans l’historique Git.",
+      features: [
+        "Publication de missions et gestion des candidatures",
+        "Profils entreprises et freelances",
+        "Conversations et messages en temps réel",
+        "Authentification et contrôle d’accès"
+      ],
+      technologies: [
+        "Spring Boot",
+        "PostgreSQL",
+        "MongoDB",
+        "Keycloak",
+        "WebSocket",
+        "Docker"
+      ],
+      github: "https://github.com/izmaoun/Marketplace",
+      demo: null
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      name: "E-banking 2.0",
+      label: "Services bancaires",
+      context: "Projet académique · 2025",
+      category: "Java / Angular",
+      need: "Proposer une interface web pour gérer des clients, leurs comptes et leurs opérations bancaires.",
+      contribution:
+        "Développement d’un backend REST Java / Spring et d’une interface Angular. Le dépôt consultable présente la gestion des comptes et les opérations de débit, crédit et virement.",
+      features: [
+        "Gestion des clients et des comptes",
+        "Débits, crédits et virements",
+        "Historique paginé des opérations",
+        "Interface Angular et environnement Docker"
+      ],
+      technologies: ["Spring Boot", "Angular", "MySQL", "Docker", "Nginx"],
+      github: "https://github.com/izmaoun/e-banking-V2",
+      demo: null
     }
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
+  education: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      school: "École Nationale des Sciences Appliquées de Marrakech",
+      degree: "Parcours ingénieur en génie informatique",
+      period: "2022 – présent"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
+      school: "Faculté des Sciences et Techniques de Marrakech",
+      degree: "Filière MPCI",
+      period: "2021 – 2022"
+    },
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      school: "Baccalauréat",
+      degree: "Sciences physiques et chimie",
+      period: "2021"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+  engagement: {
+    role: "Chef de cellule Projets",
+    organization: "Club de Filière (CGI)",
+    period: "Septembre 2025 – septembre 2026",
+    description:
+      "Supervision et coordination des projets du club, accompagnement des membres et organisation d’événements scientifiques."
+  },
+  certifications: [
+    "365 DataScience · Git and GitHub",
+    "365 DataScience · Advanced SQL"
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
-
-export {
-  illustration,
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
+  training:
+    "Oracle MyLearn · Comprehensive Java SE 17 Development — formation en cours.",
+  languages: [
+    "Tamazight · langue maternelle",
+    "Arabe · langue maternelle",
+    "Français · courant",
+    "Anglais · intermédiaire"
+  ],
+  interests: ["Athlétisme"],
+  softSkills: ["Résolution de problèmes", "Travail en équipe", "Adaptabilité"]
 };
