@@ -125,4 +125,4 @@ Le sélecteur de langue de l’en-tête permet de choisir français ou anglais s
 
 Le CV original est conservé en français et le libellé du téléchargement le précise. Aucun service de traduction, appel réseau ou nouvelle dépendance n’est nécessaire.
 
-Vérification de l’internationalisation : `npm run test:i18n` exécute les tests de composants FR/EN dans un DOM en mémoire, sans lancer de navigateur. La CI exécute ces tests avant la compilation. La vérification visuelle navigateur de cette évolution n’a pas pu être effectuée : l’ouverture de l’aperçu a été refusée.
+Vérification de l’internationalisation : `npm run test:i18n` exécute les tests de composants FR/EN dans un DOM en mémoire, sans lancer de navigateur. La CI exécute ces tests avant la compilation. L’aperçu local a initialement été bloqué. Le 16 novembre 2026, la version bilingue a ensuite été publiée sur le projet Vercel existant et vérifiée dans le navigateur en production : français, bascule vers l’anglais, langue HTML et titre traduits, choix anglais conservé après rechargement, et absence de débordement horizontal au format ordinateur.
