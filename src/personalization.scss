@@ -771,3 +771,13 @@ html {
 .footer-minimal a { color: #626b73; text-decoration: none; }
 .footer-minimal a:hover { text-decoration: underline; }
 @media(max-width:767px) { .profile-details { grid-template-columns: 1fr; gap: 8px; } }
+
+.language-selector { display: inline-flex; align-items: center; margin: 9px 6px; }
+.language-selector select { font: inherit; font-size: 14px; color: #5b3d86; background: #f3eef8; border: 1px solid #d6c9e7; border-radius: 6px; padding: 7px 8px; cursor: pointer; max-width: 130px; }
+.language-selector select:focus-visible { outline: 3px solid #b26a25; outline-offset: 3px; }
+.dark-mode .language-selector select { color: #e6dcf8; background: #312745; border-color: #66547c; }
+.legal-page { max-width: 800px; margin: 50px auto; padding: 0 24px; font-size: 17px; line-height: 1.8; }
+.legal-page a { color: #5b3d86; }
+.legal-navigation { display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap; }
+@media (min-width: 1101px) and (max-width: 1250px) { .header li a { font-size: 13px; padding-inline: 9px; } }
+@media (max-width: 767px) { .header .language-menu-item { display: inline-block; } }

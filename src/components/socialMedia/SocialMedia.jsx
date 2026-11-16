@@ -1,8 +1,9 @@
 import React from "react";
-import {portfolio as p} from "../../portfolio";
+import {useLanguage} from "../../i18n/LanguageContext";
 import {ExternalLink} from "../shared/Shared";
 import "./SocialMedia.scss";
 export default function SocialMedia() {
+  const {p, ui} = useLanguage();
   return (
     <div className="social-media-div">
       <ExternalLink
@@ -27,7 +28,7 @@ export default function SocialMedia() {
       <a
         href={`mailto:${p.email}`}
         className="icon-button google"
-        aria-label="Envoyer un e-mail"
+        aria-label={ui.email}
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <rect

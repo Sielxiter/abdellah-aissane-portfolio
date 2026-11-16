@@ -1,9 +1,10 @@
 import React from "react";
-import {portfolio as p} from "../../portfolio";
+import {useLanguage} from "../../i18n/LanguageContext";
 import {asset} from "../../components/shared/Shared";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import "./Contact.scss";
 export default function Contact() {
+  const {p, ui} = useLanguage();
   return (
     <section
       className="main contact-margin-top"
@@ -13,11 +14,9 @@ export default function Contact() {
       <div className="contact-div-main">
         <div className="contact-header">
           <h2 className="heading contact-title" id="contact-title">
-            Me contacter
+            {ui.contact}
           </h2>
-          <p className="subTitle contact-subtitle">
-            Pour un stage PFE en génie logiciel et DevOps
-          </p>
+          <p className="subTitle contact-subtitle">{ui.contactSubtitle}</p>
           <address className="contact-text-div">
             <a className="contact-detail" href={p.phoneHref}>
               {p.phone}
@@ -28,14 +27,14 @@ export default function Contact() {
             <p className="subTitle">{p.location}</p>
             <SocialMedia />
             <a className="main-button" href={asset(p.cv)} download>
-              Télécharger mon CV
+              {ui.cv}
             </a>
           </address>
         </div>
         <div className="contact-image-div profile-photo">
           <img
             src={asset(p.photo)}
-            alt="Portrait d’Amine Izmaoun"
+            alt={ui.portrait}
             width="1086"
             height="1448"
             loading="lazy"

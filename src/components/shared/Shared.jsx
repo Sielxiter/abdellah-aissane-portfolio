@@ -1,10 +1,12 @@
 import React from "react";
+import {useLanguage} from "../../i18n/LanguageContext";
 export const asset = path => `${import.meta.env.BASE_URL}${path}`;
 export function ExternalLink({href, children, ...props}) {
+  const {ui} = useLanguage();
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
       {children}
-      <span className="sr-only"> (nouvel onglet)</span>
+      <span className="sr-only"> ({ui.newTab})</span>
     </a>
   );
 }

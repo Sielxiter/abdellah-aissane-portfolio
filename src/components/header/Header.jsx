@@ -1,16 +1,17 @@
 import React, {useRef, useState} from "react";
 import usePageNavigation from "../../hooks/usePageNavigation";
-import {portfolio as p} from "../../portfolio";
+import {LanguageSelector, useLanguage} from "../../i18n/LanguageContext";
 import "./Header.scss";
-const links = [
-  ["skills", "À propos"],
-  ["competences", "Compétences"],
-  ["experience", "Expérience"],
-  ["projects", "Projets"],
-  ["education", "Formation"],
-  ["contact", "Contact"]
+const sectionIds = [
+  "skills",
+  "competences",
+  "experience",
+  "projects",
+  "education",
+  "contact"
 ];
 export default function Header({dark, toggleTheme}) {
+  const {p, ui} = useLanguage();
   const headerRef = useRef(null);
   const {active, showTop} = usePageNavigation(headerRef);
   const [open, setOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Header({dark, toggleTheme}) {
         <a
           className="logo"
           href="#greeting"
-          aria-label="Amine Izmaoun, accueil"
+          aria-label={`${p.name}, ${ui.home}`}
         >
           <span className="grey-color">&lt;</span>
           <span className="logo-name">{p.name}</span>
@@ -33,29 +34,30 @@ export default function Header({dark, toggleTheme}) {
           aria-expanded={open}
           onClick={() => setOpen(!open)}
         >
-          {open ? "Fermer" : "Menu"}
+          {open ? ui.close : ui.menu}
         </button>
-        <nav aria-label="Navigation principale">
+        <nav aria-label={ui.navigation}>
           <ul id="navigation" className={open ? "menu menu-open" : "menu"}>
-            {links.map(([id, label]) => (
+            {sectionIds.map((id, index) => (
               <li key={id}>
                 <a
                   href={`#${id}`}
                   aria-current={active === id ? "location" : undefined}
                   onClick={() => setOpen(false)}
                 >
-                  {label}
+                  {ui.nav[index]}
                 </a>
               </li>
             ))}
+            <li className="language-menu-item">
+              <LanguageSelector />
+            </li>
             <li>
               <button
                 className="theme-switch"
                 type="button"
                 onClick={toggleTheme}
-                aria-label={
-                  dark ? "Activer le thème clair" : "Activer le thème sombre"
-                }
+                aria-label={dark ? ui.light : ui.dark}
                 aria-pressed={dark}
               >
                 <span aria-hidden="true">{dark ? "☀" : "☾"}</span>
@@ -67,10 +69,19 @@ export default function Header({dark, toggleTheme}) {
       </header>
       {showTop && (
         <a
-          onClick={event => { event.preventDefault(); window.scrollTo({top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"}); }}
+          onClick={event => {
+            event.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
+                .matches
+                ? "instant"
+                : "smooth"
+            });
+          }}
           className="floating-top"
           href="#greeting"
-          aria-label="Retour en haut de la page"
+          aria-label={ui.top}
         >
           ↑
         </a>

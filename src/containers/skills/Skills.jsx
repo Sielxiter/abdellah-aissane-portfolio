@@ -1,9 +1,10 @@
 import React from "react";
-import {portfolio as p} from "../../portfolio";
+import {useLanguage} from "../../i18n/LanguageContext";
 import TechnologyIcon from "../../components/softwareSkills/TechnologyIcon";
 import illustration from "../../assets/images/developerActivity.svg";
 import "./Skills.scss";
 export default function Skills() {
+  const {p, ui} = useLanguage();
   return (
     <>
       <section className="main" id="skills" aria-labelledby="about-title">
@@ -19,11 +20,9 @@ export default function Skills() {
           </div>
           <div className="skills-text-div">
             <h2 className="skills-heading" id="about-title">
-              À propos
+              {ui.about}
             </h2>
-            <p className="subTitle skills-text-subtitle">
-              Génie logiciel et DevOps · ENSA Marrakech
-            </p>
+            <p className="subTitle skills-text-subtitle">{ui.aboutSubtitle}</p>
             {p.about.map(text => (
               <p className="subTitle skills-text" key={text}>
                 {text}
@@ -34,7 +33,7 @@ export default function Skills() {
       </section>
       <section className="main" id="competences" aria-labelledby="skills-title">
         <h2 className="skills-heading" id="skills-title">
-          Compétences
+          {ui.skills}
         </h2>
         <div className="skill-domains">
           {p.skills.map(group => (

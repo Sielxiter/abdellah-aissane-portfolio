@@ -112,3 +112,17 @@ npm run build
 Dans Vercel, utiliser l’envoi de fichiers (« Drop to Deploy »), sélectionner le contenu de `dist/` et choisir le projet existant `amine-izmaoun-portfolio`. Le lien public reste associé à ce projet. Le dépôt GitHub fournit le code source depuis la page « Mentions et crédits ».
 
 Vérifications après publication : accueil public chargé et téléchargement du CV testé ; le PDF téléchargé est identique au fichier local (SHA-256).
+
+## Français / English
+
+Le sélecteur de langue de l’en-tête permet de choisir français ou anglais sans recharger la page. Le français est proposé au premier accès ; le choix est ensuite mémorisé dans le navigateur. Le sélecteur reste utilisable si le stockage local est indisponible. Le menu mobile contient le même sélecteur.
+
+- `src/portfolio.js` reste la référence pour les informations communes et le contenu français.
+- `src/i18n/en.js` contient la traduction anglaise du profil, sans dupliquer les coordonnées, les liens ou les technologies.
+- `src/i18n/messages.js` centralise les libellés d’interface, les textes accessibles et les crédits dans les deux langues.
+- `src/i18n/LanguageContext.jsx` gère le choix, sa mémorisation, la langue HTML, le titre et la description de la page.
+- `mentions.html` utilise la même application et le même choix de langue ; Vite compile les deux pages.
+
+Le CV original est conservé en français et le libellé du téléchargement le précise. Aucun service de traduction, appel réseau ou nouvelle dépendance n’est nécessaire.
+
+Vérification de l’internationalisation : `npm run test:i18n` exécute les tests de composants FR/EN dans un DOM en mémoire, sans lancer de navigateur. La CI exécute ces tests avant la compilation. La vérification visuelle navigateur de cette évolution n’a pas pu être effectuée : l’ouverture de l’aperçu a été refusée.

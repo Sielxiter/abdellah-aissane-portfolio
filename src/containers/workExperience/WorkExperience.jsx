@@ -1,8 +1,9 @@
 import React from "react";
-import {portfolio as p} from "../../portfolio";
+import {useLanguage} from "../../i18n/LanguageContext";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import "./WorkExperience.scss";
 export default function WorkExperience() {
+  const {p, ui} = useLanguage();
   return (
     <section
       className="experience-container"
@@ -11,7 +12,7 @@ export default function WorkExperience() {
     >
       <div>
         <h2 className="experience-heading" id="experience-title">
-          Expérience professionnelle
+          {ui.experience}
         </h2>
         <div className="experience-cards-div">
           {p.experience.map(e => (

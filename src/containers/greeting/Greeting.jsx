@@ -1,10 +1,11 @@
 import React from "react";
-import {portfolio as p} from "../../portfolio";
+import {useLanguage} from "../../i18n/LanguageContext";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {asset} from "../../components/shared/Shared";
 import "./Greeting.scss";
 import "../../components/button/Button.scss";
 export default function Greeting() {
+  const {p, ui} = useLanguage();
   return (
     <section
       className="greet-main"
@@ -14,7 +15,7 @@ export default function Greeting() {
       <div className="greeting-main">
         <div className="greeting-text-div">
           <h1 className="greeting-text" id="greeting-title">
-            Bonjour, je suis {p.name}{" "}
+            {ui.hello} {p.name}{" "}
             <span className="wave-emoji" aria-hidden="true">
               👋
             </span>
@@ -25,13 +26,13 @@ export default function Greeting() {
           <SocialMedia />
           <div className="button-greeting-div">
             <a className="main-button" href="#projects">
-              Voir mes projets
+              {ui.projectsButton}
             </a>
             <a className="main-button" href={asset(p.cv)} download>
-              Télécharger mon CV
+              {ui.cv}
             </a>
             <a className="main-button" href="#contact">
-              Me contacter
+              {ui.contact}
             </a>
           </div>
         </div>
@@ -40,7 +41,7 @@ export default function Greeting() {
             src={asset(p.photo)}
             width="1086"
             height="1448"
-            alt="Portrait d’Amine Izmaoun"
+            alt={ui.portrait}
             fetchPriority="high"
           />
         </div>

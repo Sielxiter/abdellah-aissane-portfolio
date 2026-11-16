@@ -1,6 +1,8 @@
 // DeveloperFolio : structure et styles du template original, adaptés en français.
 import React, {useRef, useState} from "react";
 import useScrollReveal from "./hooks/useScrollReveal";
+import {useLanguage} from "./i18n/LanguageContext";
+import LegalPage from "./components/legal/LegalPage";
 import Header from "./components/header/Header";
 import Greeting from "./containers/greeting/Greeting";
 import Skills from "./containers/skills/Skills";
@@ -11,13 +13,15 @@ import Contact from "./containers/contact/Contact";
 import "./personalization.scss";
 
 export default function App() {
+  const {ui} = useLanguage();
   const rootRef = useRef(null);
   useScrollReveal(rootRef);
   const [dark, setDark] = useState(false);
+  if (location.pathname.endsWith("mentions.html")) return <LegalPage />;
   return (
     <div ref={rootRef} className={dark ? "portfolio dark-mode" : "portfolio"}>
       <a className="skip-link" href="#contenu">
-        Aller au contenu
+        {ui.skip}
       </a>
       <Header dark={dark} toggleTheme={() => setDark(!dark)} />
       <main id="contenu">
@@ -29,7 +33,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="footer-div footer-minimal">
-        <a href={`${import.meta.env.BASE_URL}mentions.html`}>Mentions et crédits</a>
+        <a href={`${import.meta.env.BASE_URL}mentions.html`}>{ui.credits}</a>
       </footer>
     </div>
   );
