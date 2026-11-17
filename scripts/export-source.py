@@ -12,5 +12,5 @@ with ZipFile(output, 'w', ZIP_DEFLATED) as archive:
                 or excluded.intersection(relative.parts)
                 or path.name.startswith('.env') or path.suffix == '.log'):
             continue
-        archive.write(path, Path('amine-izmaoun-portfolio') / relative)
+        archive.write(path, Path('abdellah-aissane-portfolio') / relative)
 print('Sources exportées : public/portfolio-source.zip')

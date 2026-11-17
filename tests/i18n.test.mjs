@@ -90,10 +90,10 @@ test("FR → EN → FR traduit l’interface et le profil sans modifier les lien
   const before = githubLinks();
   await choose("en");
   assert.equal(document.documentElement.lang, "en");
-  assert.match(document.title, /Software Engineering/);
+  assert.match(document.title, /Full Stack/);
   assert.match(
     document.querySelector('meta[name="description"]').content,
-    /Seeking a final-year internship/
+    /Full Stack development/
   );
   assert.match(document.querySelector("h1").textContent, /Hello/);
   assert.equal(
@@ -105,28 +105,23 @@ test("FR → EN → FR traduit l’interface et le profil sans modifier les lien
     "Education"
   );
   assert.match(
-    document.querySelector("#interests-title").textContent,
-    /Interests/
-  );
-  assert.match(
     document.querySelector("#qualities-title").textContent,
     /Professional strengths/
   );
   assert.match(
     document.querySelector(".experience-text-date").textContent,
-    /June/
+    /July/
   );
   assert.match(
     document.querySelector("#contact").textContent,
-    /Casablanca, Morocco/
+    /Morocco/
   );
-  assert.match(document.querySelector("a[download]").textContent, /French/);
   assert.match(
     document.querySelector("nav").getAttribute("aria-label"),
     /Main navigation/
   );
   assert.deepEqual(githubLinks(), before);
-  assert.equal(document.querySelectorAll(".skill-icon-grid li").length, 30);
+  assert.equal(document.querySelectorAll(".skill-icon-grid li").length, portfolio.skills.reduce((n, group) => n + group.items.length, 0));
   assert.equal(localStorage.getItem("portfolio-language"), "en");
   await choose("fr");
   assert.match(document.querySelector("h1").textContent, /Bonjour/);

@@ -36,7 +36,7 @@ export function LanguageProvider({children}) {
   useEffect(() => {
     document.documentElement.lang = language;
     document.title = location.pathname.endsWith("mentions.html")
-      ? `${ui.credits} | Amine Izmaoun`
+      ? `${ui.credits} | Abdellah Aissane`
       : ui.title;
     document
       .querySelector('meta[name="description"]')

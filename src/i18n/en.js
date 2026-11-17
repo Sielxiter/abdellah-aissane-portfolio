@@ -1,112 +1,113 @@
-// English translation of the verified French profile. Shared facts stay in portfolio.js.
 export const englishProfile = {
-  specialty: "Software Engineering & DevOps",
-  status: "Looking for a final-year engineering internship",
-  location: "Casablanca, Morocco",
-  intro:
-    "I am a computer engineering student at ENSA Marrakech. I develop Java / Spring Boot applications and work on automating their deployment.",
-  about: [
-    "My studies at ENSA Marrakech led me towards software engineering and DevOps. I enjoy understanding a business need, translating it into services and following an application through to deployment.",
-    "With Java and Spring Boot, I am particularly interested in microservices, API security and communication between services. My PFA internship at Code212 brought this work together with containerisation, continuous integration and observability.",
-    "For my final-year internship, I would like to contribute to a project combining software development and DevOps practices, working with a team I can continue to learn from."
+  "specialty": "Full Stack Java / Spring Boot",
+  "status": "Computer engineering student · ENSA Marrakech",
+  "location": "Morocco",
+  "intro": "I build Spring Boot APIs and React interfaces, and take applications through deployment with Docker and AWS.",
+  "about": [
+    "I am a computer engineering student at ENSA Marrakech, specialising in Full Stack Java / Spring Boot development. I enjoy turning concrete requirements into working applications, from backend services to user interfaces.",
+    "At Code212, I delivered a university application platform for Université Cadi Ayyad. At Cdigital, I contributed to a microservices E-Learning platform with React, Spring Boot and AWS.",
+    "I also explore real-time data processing through a sentiment analysis project combining Kafka, Spark, BERT and a Streamlit dashboard."
   ],
-  skillTitles: [
-    "Back-end & architecture",
-    "Front-end",
+  "skillTitles": [
+    "Backend & architecture",
+    "Frontend",
     "Databases",
     "DevOps & cloud"
   ],
-  experience: [
+  "experience": [
     {
-      role: "PFA internship · Microservices & DevOps platform",
-      period: "June – September 2026",
-      summary:
-        "Design, development and deployment of a resource booking platform for the Code212 centre.",
-      missions: [
-        "Developed five Spring Boot microservices: Config, Eureka, Gateway, Resource and Reservation. Service communication with OpenFeign and Eureka, with separate PostgreSQL databases per service.",
-        "Secured APIs using Keycloak, OAuth2 / OIDC, JWT and RBAC; token validation in the Gateway and services with Spring Security 6.",
-        "Developed REST APIs documented with OpenAPI 3; persistence with Spring Data JPA, Hibernate and MapStruct.",
-        "Automated a Jenkins pipeline covering Maven builds, tests, SonarQube, Trivy and Docker image publishing, triggered by a Git webhook.",
-        "Used multi-stage Docker builds, a Docker Compose environment with health checks and Kubernetes deployment on Minikube through Nginx Ingress.",
-        "Provisioned infrastructure with Terraform, packaged deployments with Helm and set up monitoring with Prometheus and Grafana."
+      "role": "Internship · Full Stack Developer",
+      "period": "July – August 2026",
+      "summary": "Contributed to an E-Learning platform built on a microservices architecture.",
+      "missions": [
+        "Designed and developed three business microservices exposing REST APIs with Spring Boot, JPA / Hibernate and MySQL.",
+        "Built responsive interfaces with React, ShadCn and TailwindCSS.",
+        "Managed file storage on AWS S3 and deployed containerised services with Docker / Docker Compose on AWS EC2."
+      ]
+    },
+    {
+      "role": "Internship · Full Stack & DevOps Developer",
+      "period": "April – June 2026",
+      "summary": "Designed and delivered an application platform for university teaching positions at Université Cadi Ayyad.",
+      "missions": [
+        "Gathered requirements with the UCA HR team and designed four areas: Candidate, Super-Admin, Institution Admin and Committee.",
+        "Developed REST APIs with Spring Boot and MySQL, including authentication, roles and business rules.",
+        "Containerised services with Docker / Docker Compose, set up GitHub Actions CI/CD and deployed to UCA servers."
       ]
     }
   ],
-  projects: [
+  "projects": [
     {
-      name: "Code212",
-      label: "Resource booking",
-      context: "PFA internship · 2026",
-      category: "Microservices / DevOps",
-      need: "Help the Code212 centre manage its resources and bookings.",
-      contribution:
-        "Developed the resource and reservation services and integrated security and a containerised environment during my PFA internship.",
-      features: [
-        "Resource and booking management",
-        "Booking conflict checks",
-        "Keycloak authentication and documented APIs",
-        "Service discovery and centralised routing"
+      "name": "Sentiment analysis",
+      "label": "Real-time YouTube analysis",
+      "context": "Personal project · 2026",
+      "category": "Big Data / AWS",
+      "need": "Collect YouTube comments and track their sentiment in real time.",
+      "contribution": "Designed a distributed collection, classification and visualisation pipeline with cloud infrastructure on AWS.",
+      "features": [
+        "Collection with YouTube Data API and AWS Lambda",
+        "Kafka and Spark Structured Streaming processing",
+        "Fine-tuned BERT classification and Elasticsearch indexing",
+        "Streamlit dashboard hosted on AWS EC2"
       ]
     },
     {
-      name: "B2B Marketplace",
-      label: "Companies & freelancers",
-      context: "End-of-semester project · 2026",
-      category: "Microservices / Real-time communication",
-      need: "Connect companies and freelancers through project opportunities and applications.",
-      contribution:
-        "In this team project, I developed the WebSocket messaging service and connected the company, freelancer, administration and mission services. These contributions can be identified in the Git history.",
-      features: [
-        "Mission publishing and application management",
-        "Company and freelancer profiles",
-        "Real-time conversations and messages",
-        "Authentication and access control"
+      "name": "UCA applications",
+      "label": "University recruitment",
+      "context": "Code212 internship · 2026",
+      "category": "Full Stack / CI/CD",
+      "need": "Support the submission and management of university teaching applications.",
+      "contribution": "Delivered the project from requirements gathering with HR through production deployment on UCA servers.",
+      "features": [
+        "Four role-based user areas",
+        "Authentication and access control",
+        "Spring Boot REST APIs and business rules",
+        "Docker deployment and GitHub Actions automation"
       ]
     },
     {
-      name: "E-banking 2.0",
-      label: "Banking services",
-      context: "Academic project · 2025",
-      category: "Java / Angular",
-      need: "Provide a web interface to manage customers, their accounts and banking transactions.",
-      contribution:
-        "Developed a Java / Spring REST backend and an Angular interface. The public repository includes account management and debit, credit and transfer operations.",
-      features: [
-        "Customer and account management",
-        "Debits, credits and transfers",
-        "Paginated transaction history",
-        "Angular interface and Docker environment"
+      "name": "E-Learning platform",
+      "label": "Learning services",
+      "context": "Cdigital internship · 2026",
+      "category": "Microservices / React",
+      "need": "Build a learning platform with business services and a React interface.",
+      "contribution": "Contributed three Spring Boot microservices, React interfaces and service deployment on AWS.",
+      "features": [
+        "REST APIs with Spring Boot and Hibernate",
+        "React, ShadCn and TailwindCSS interfaces",
+        "AWS S3 file storage",
+        "Containerised services on AWS EC2"
       ]
     }
   ],
-  education: [
+  "education": [
     {
-      school: "École Nationale des Sciences Appliquées de Marrakech",
-      degree: "Computer engineering programme",
-      period: "2022 – present"
+      "school": "École Nationale des Sciences Appliquées de Marrakech",
+      "degree": "Computer engineering programme",
+      "period": "2024 – present"
     },
     {
-      school: "Faculté des Sciences et Techniques de Marrakech",
-      degree: "MPCI programme",
-      period: "2021 – 2022"
+      "school": "ENSA Marrakech",
+      "degree": "Integrated preparatory classes",
+      "period": "2022 – 2024"
     },
-    {school: "Baccalaureate", degree: "Physics and Chemistry", period: "2021"}
+    {
+      "school": "Lycée Abdellah Ben Brahim, Morocco",
+      "degree": "Baccalaureate in Physical Sciences",
+      "period": "2021 – 2022"
+    }
   ],
-  engagement: {
-    role: "Project Unit Lead",
-    organization: "Department Club (CGI)",
-    period: "September 2025 – September 2026",
-    description:
-      "Supervised and coordinated club projects, supported members and organised scientific events."
-  },
-  training:
-    "Oracle MyLearn · Comprehensive Java SE 17 Development — training in progress.",
-  languages: [
-    "Tamazight · native",
+  "engagement": null,
+  "training": null,
+  "languages": [
     "Arabic · native",
     "French · fluent",
-    "English · intermediate"
+    "English · fluent"
   ],
-  interests: ["Athletics"],
-  softSkills: ["Problem solving", "Teamwork", "Adaptability"]
+  "interests": [],
+  "softSkills": [
+    "Autonomy",
+    "Attention to detail",
+    "Quality mindset"
+  ]
 };

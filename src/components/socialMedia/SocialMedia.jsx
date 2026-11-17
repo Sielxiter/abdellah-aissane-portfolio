@@ -18,13 +18,13 @@ export default function SocialMedia() {
           />
         </svg>
       </ExternalLink>
-      <ExternalLink
+      {p.linkedin && <ExternalLink
         href={p.linkedin}
         className="icon-button linkedin"
         aria-label="LinkedIn"
       >
         <span aria-hidden="true">in</span>
-      </ExternalLink>
+      </ExternalLink>}
       <a
         href={`mailto:${p.email}`}
         className="icon-button google"

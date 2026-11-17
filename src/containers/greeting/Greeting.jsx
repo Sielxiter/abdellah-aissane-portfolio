@@ -1,4 +1,5 @@
 import React from "react";
+import illustration from "../../assets/images/manOnTable.svg";
 import {useLanguage} from "../../i18n/LanguageContext";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {asset} from "../../components/shared/Shared";
@@ -28,20 +29,17 @@ export default function Greeting() {
             <a className="main-button" href="#projects">
               {ui.projectsButton}
             </a>
-            <a className="main-button" href={asset(p.cv)} download>
-              {ui.cv}
-            </a>
             <a className="main-button" href="#contact">
               {ui.contact}
             </a>
           </div>
         </div>
-        <div className="greeting-image-div hero-portrait">
+        <div className="greeting-image-div">
           <img
-            src={asset(p.photo)}
-            width="1086"
-            height="1448"
-            alt={ui.portrait}
+            src={illustration}
+            width="800"
+            height="600"
+            alt=""
             fetchPriority="high"
           />
         </div>

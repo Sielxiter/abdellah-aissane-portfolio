@@ -31,7 +31,7 @@
 .theme-switch {
   border: 0;
   border-radius: 20px;
-  background: #eee8f3;
+  background: #e5f2ee;
   color: $buttonColor;
   font-size: 24px;
   line-height: 1;
@@ -154,8 +154,8 @@
   margin: 15px 0 25px;
 }
 .technology-list li {
-  background: #f3f0f7;
-  color: #5b3d86;
+  background: #eaf5f1;
+  color: #14675e;
   border-radius: 5px;
   padding: 5px 11px;
   font-size: 14px;
@@ -296,7 +296,7 @@
   object-fit: cover;
   object-position: 50% 35%;
   margin: 0;
-  border: 6px solid #f3f0f7;
+  border: 6px solid #eaf5f1;
 }
 .footer-div {
   font-size: 13px;
@@ -332,20 +332,20 @@
 }
 .dark-mode .technology-list li,
 .dark-mode .theme-switch {
-  background: #312745;
-  color: #e6dcf8;
+  background: #203b35;
+  color: #d5f0e6;
 }
 .dark-mode .pfe-status,
 .dark-mode .greeting-specialty {
-  color: #c4abeb;
+  color: #92d9c1;
 }
 .dark-mode .main-button {
-  background: #bda0e4;
-  border-color: #bda0e4;
+  background: #92d9c1;
+  border-color: #92d9c1;
   color: #171c28;
 }
 .dark-mode .footer-div a {
-  color: #c4abeb;
+  color: #92d9c1;
 }
 .dark-mode .contact-detail,
 .dark-mode .contact-detail-email {
@@ -607,10 +607,10 @@
   object-fit: cover;
   object-position: 50% 30%;
   border-radius: 48% 48% 36% 36%;
-  border: 10px solid #f1ecf8;
+  border: 10px solid #e5f2ee;
   box-shadow:
-    18px 22px 0 -6px #e8dff4,
-    0 24px 60px #5b3d8618;
+    18px 22px 0 -6px #cfe7de,
+    0 24px 60px #14675e18;
 }
 // Logos locaux : aucun service tiers contacté par le navigateur.
 .skill-icon-grid {
@@ -629,10 +629,10 @@
   gap: 12px;
   min-height: 112px;
   padding: 15px 8px;
-  border: 1px solid #e9e3f0;
+  border: 1px solid #dcece5;
   border-radius: 9px;
-  color: #5b3d86;
-  background: #fcfaff;
+  color: #14675e;
+  background: #f7fcfa;
   text-align: center;
   font-size: 13px;
   line-height: 1.4;
@@ -659,8 +659,8 @@ html {
   border-radius: 5px;
 }
 .header li a[aria-current="location"] {
-  color: #5b3d86;
-  background: #f0eaf7;
+  color: #14675e;
+  background: #e4f3ed;
 }
 .header li a[aria-current="location"]::after {
   content: "";
@@ -669,7 +669,7 @@ html {
   left: 14px;
   right: 14px;
   height: 2px;
-  background: #7655a5;
+  background: #218477;
   border-radius: 3px;
 }
 .reading-progress {
@@ -678,7 +678,7 @@ html {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #5b3d86, #aa8bdb);
+  background: linear-gradient(90deg, #14675e, #70b6a1);
   transform: scaleX(var(--reading-progress, 0));
   transform-origin: left;
   pointer-events: none;
@@ -693,20 +693,20 @@ html {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #5b3d86;
+  background: #14675e;
   color: #fff;
   text-decoration: none;
   font-size: 25px;
-  box-shadow: 0 5px 20px #5b3d8630;
+  box-shadow: 0 5px 20px #14675e30;
 }
 .dark-mode .skill-icon-grid li {
-  background: #242334;
-  border-color: #40364f;
-  color: #dfd1f4;
+  background: #1d302c;
+  border-color: #36594e;
+  color: #d5f0e6;
 }
 .dark-mode .header li a[aria-current="location"] {
-  background: #352a47;
-  color: #dfd1f4 !important;
+  background: #24473d;
+  color: #d5f0e6 !important;
 }
 .dark-mode .hero-portrait img {
   border-color: #382c49;
@@ -725,7 +725,7 @@ html {
   }
   .skill-icon-grid li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px #5b3d8614;
+    box-shadow: 0 8px 20px #14675e14;
   }
   .skill-icon-grid li:hover img {
     transform: scale(1.12);
@@ -773,11 +773,11 @@ html {
 @media(max-width:767px) { .profile-details { grid-template-columns: 1fr; gap: 8px; } }
 
 .language-selector { display: inline-flex; align-items: center; margin: 9px 6px; }
-.language-selector select { font: inherit; font-size: 14px; color: #5b3d86; background: #f3eef8; border: 1px solid #d6c9e7; border-radius: 6px; padding: 7px 8px; cursor: pointer; max-width: 130px; }
+.language-selector select { font: inherit; font-size: 14px; color: #14675e; background: #e8f5ef; border: 1px solid #bddbce; border-radius: 6px; padding: 7px 8px; cursor: pointer; max-width: 130px; }
 .language-selector select:focus-visible { outline: 3px solid #b26a25; outline-offset: 3px; }
-.dark-mode .language-selector select { color: #e6dcf8; background: #312745; border-color: #66547c; }
+.dark-mode .language-selector select { color: #d5f0e6; background: #203b35; border-color: #53776a; }
 .legal-page { max-width: 800px; margin: 50px auto; padding: 0 24px; font-size: 17px; line-height: 1.8; }
-.legal-page a { color: #5b3d86; }
+.legal-page a { color: #14675e; }
 .legal-navigation { display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap; }
 @media (min-width: 1101px) and (max-width: 1250px) { .header li a { font-size: 13px; padding-inline: 9px; } }
 @media (max-width: 767px) { .header .language-menu-item { display: inline-block; } }

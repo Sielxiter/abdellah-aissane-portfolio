@@ -21,7 +21,7 @@ export default function LegalPage() {
         <a href={asset("LICENSE")}>{ui.license}</a>
       </p>
       <p>
-        <a href="https://github.com/izmaoun/amine-izmaoun-portfolio/archive/refs/heads/main.zip">
+        <a href="https://github.com/Sielxiter/abdellah-aissane-portfolio/archive/refs/heads/main.zip">
           {ui.source}
         </a>
       </p>

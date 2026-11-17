@@ -26,12 +26,9 @@ export default function Contact() {
             </a>
             <p className="subTitle">{p.location}</p>
             <SocialMedia />
-            <a className="main-button" href={asset(p.cv)} download>
-              {ui.cv}
-            </a>
           </address>
         </div>
-        <div className="contact-image-div profile-photo">
+        {p.photo && <div className="contact-image-div profile-photo">
           <img
             src={asset(p.photo)}
             alt={ui.portrait}
@@ -39,7 +36,7 @@ export default function Contact() {
             height="1448"
             loading="lazy"
           />
-        </div>
+        </div>}
       </div>
     </section>
   );

@@ -1,206 +1,211 @@
-// Informations vérifiées dans le CV et les dépôts ; détails dans docs/SOURCES.md.
-// Aucun appel GitHub ni secret n'est nécessaire pour afficher le portfolio.
+// Profil établi à partir du CV fourni ; voir docs/SOURCES.md.
 export const portfolio = {
-  name: "Amine Izmaoun",
-  specialty: "Génie logiciel & DevOps",
-  status: "À la recherche d’un stage PFE",
-  location: "Casablanca, Maroc",
-  email: "beleamine84@gmail.com",
-  phone: "+212 708 91 92 05",
-  phoneHref: "tel:+212708919205",
-  github: "https://github.com/izmaoun",
-  linkedin: "https://www.linkedin.com/in/amine-izmaoun-5ab61232a/",
-  cv: "CV_IZMAOUN_Amine.pdf",
-  photo: "images/amine-izmaoun-portrait.jpg",
-  intro:
-    "Étudiant ingénieur en génie informatique à l’ENSA Marrakech, je développe des applications Java / Spring Boot et travaille sur l’automatisation de leur déploiement.",
-  about: [
-    "Mon parcours à l’ENSA Marrakech m’a conduit vers le génie logiciel et le DevOps. J’aime comprendre un besoin métier, le traduire en services et suivre une application jusqu’à son déploiement.",
-    "Avec Java et Spring Boot, je m’intéresse particulièrement aux architectures microservices, à la sécurité des API et à la communication entre services. Mon stage PFA chez Code212 m’a permis d’associer ce travail à la conteneurisation, à l’intégration continue et à l’observabilité.",
-    "Pour mon PFE, je souhaite contribuer à un projet qui relie développement logiciel et pratiques DevOps, au sein d’une équipe auprès de laquelle continuer à apprendre."
+  "name": "Abdellah Aissane",
+  "specialty": "Full Stack Java / Spring Boot",
+  "status": "Élève ingénieur en Génie Informatique · ENSA Marrakech",
+  "location": "Maroc",
+  "email": "aissaneabdellah@gmail.com",
+  "phone": "+212 770 472 728",
+  "phoneHref": "tel:+212770472728",
+  "github": "https://github.com/Sielxiter",
+  "linkedin": null,
+  "cv": null,
+  "photo": null,
+  "intro": "Je conçois des API Spring Boot et des interfaces React, puis je les accompagne jusqu’au déploiement avec Docker et AWS.",
+  "about": [
+    "Élève ingénieur à l’ENSA Marrakech, je me spécialise dans le développement Full Stack Java / Spring Boot. J’aime partir d’un besoin concret et construire une application utilisable, du backend à l’interface.",
+    "Chez Code212, j’ai pris en charge une plateforme de candidature pour l’Université Cadi Ayyad. Chez Cdigital, j’ai participé à une plateforme E-Learning en microservices, avec React, Spring Boot et AWS.",
+    "Je m’intéresse aussi au traitement de données en temps réel : mon projet d’analyse de sentiments associe Kafka, Spark, BERT et un dashboard Streamlit."
   ],
-  skills: [
+  "skills": [
     {
-      title: "Back-end & architecture",
-      items: [
+      "title": "Backend & architecture",
+      "items": [
         "Java",
+        "Java EE",
         "Spring Boot",
-        "Spring Cloud",
         "Spring Security",
-        "Keycloak",
-        "Microservices",
         "Hibernate",
-        "Kafka"
+        "APIs REST",
+        "Microservices",
+        "Spring Cloud",
+        "Kafka",
+        "Design Patterns"
       ]
     },
-    {title: "Interfaces", items: ["Angular", "TypeScript", "React", "JavaFX"]},
     {
-      title: "Bases de données",
-      items: ["PostgreSQL", "MySQL", "MongoDB", "SQL", "PL/SQL"]
+      "title": "Frontend",
+      "items": [
+        "React",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "TailwindCSS",
+        "ShadCn"
+      ]
     },
     {
-      title: "DevOps & cloud",
-      items: [
-        "Git",
+      "title": "Bases de données",
+      "items": [
+        "MySQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "title": "DevOps & cloud",
+      "items": [
         "Docker",
         "Docker Compose",
-        "Jenkins",
-        "SonarQube",
-        "Trivy",
-        "Kubernetes",
-        "Helm",
-        "Nginx",
-        "Terraform",
-        "Prometheus",
-        "Grafana",
+        "GitHub Actions",
+        "AWS",
+        "Git",
+        "Jira"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Cdigital",
+      "role": "Stage · Développeur Full Stack",
+      "period": "Juillet – août 2026",
+      "summary": "Participation au développement d’une plateforme E-Learning reposant sur une architecture microservices.",
+      "missions": [
+        "Conception et développement de trois microservices métier exposant des API REST avec Spring Boot, JPA / Hibernate et MySQL.",
+        "Réalisation d’interfaces réactives avec React, ShadCn et TailwindCSS.",
+        "Gestion du stockage des fichiers sur AWS S3 et déploiement des services conteneurisés avec Docker / Docker Compose sur AWS EC2."
+      ],
+      "technologies": [
+        "Spring Boot",
+        "Hibernate",
+        "MySQL",
+        "React",
+        "ShadCn",
+        "TailwindCSS",
+        "Docker",
+        "AWS S3",
+        "AWS EC2"
+      ]
+    },
+    {
+      "company": "Code212",
+      "role": "Stage · Développeur Full Stack & DevOps",
+      "period": "Avril – juin 2026",
+      "summary": "Conception et livraison d’une plateforme de candidature pour les enseignants universitaires de l’Université Cadi Ayyad.",
+      "missions": [
+        "Recueil des besoins auprès du service RH de l’UCA et définition de quatre espaces : Candidat, Super-Admin, Admin Établissement et Commission.",
+        "Développement d’API REST avec Spring Boot et MySQL, gestion de l’authentification, des rôles et des règles métier.",
+        "Conteneurisation Docker / Docker Compose, pipeline CI/CD GitHub Actions et mise en production sur les serveurs de l’UCA."
+      ],
+      "technologies": [
+        "Spring Boot",
+        "MySQL",
+        "APIs REST",
+        "Docker",
+        "Docker Compose",
+        "GitHub Actions"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Analyse de sentiments",
+      "label": "YouTube en temps réel",
+      "context": "Projet personnel · 2026",
+      "category": "Big Data / AWS",
+      "need": "Collecter des commentaires YouTube et suivre leur sentiment en temps réel.",
+      "contribution": "Conception d’un pipeline distribué de collecte, de classification et de visualisation, avec une architecture cloud sur AWS.",
+      "features": [
+        "Collecte via YouTube Data API et AWS Lambda",
+        "Traitement Kafka et Spark Structured Streaming",
+        "Classification par BERT fine-tuné et indexation Elasticsearch",
+        "Dashboard Streamlit hébergé sur AWS EC2"
+      ],
+      "technologies": [
+        "Kafka",
+        "Spark",
+        "BERT",
+        "Elasticsearch",
+        "Streamlit",
         "AWS"
-      ]
-    }
-  ],
-  experience: [
-    {
-      company: "Code212",
-      role: "Stage PFA · Plateforme microservices & DevOps",
-      period: "Juin – septembre 2026",
-      summary:
-        "Conception, développement et déploiement d’une plateforme de réservation des ressources du centre Code212.",
-      missions: [
-        "Développement de cinq microservices Spring Boot : Config, Eureka, Gateway, Resource et Reservation. Communication avec OpenFeign et Eureka, et bases PostgreSQL séparées par service.",
-        "Sécurisation des API avec Keycloak, OAuth2 / OIDC, JWT et RBAC ; validation des jetons dans la Gateway et les services avec Spring Security 6.",
-        "Développement d’API REST documentées avec OpenAPI 3 ; persistance avec Spring Data JPA, Hibernate et MapStruct.",
-        "Automatisation d’un pipeline Jenkins : compilation Maven, tests, SonarQube, Trivy et publication des images Docker, déclenché par webhook Git.",
-        "Conteneurisation Docker multi-stage, environnement Docker Compose avec contrôles de santé et déploiement Kubernetes sur Minikube via Ingress Nginx.",
-        "Provisionnement Terraform, déploiements Helm et monitoring avec Prometheus et Grafana."
       ],
-      technologies: [
-        "Java 17",
-        "Spring Boot 3.2.5",
-        "Spring Cloud",
-        "Spring Security 6",
-        "PostgreSQL 16",
-        "Keycloak 23",
-        "Maven",
-        "Git",
-        "Jenkins",
-        "SonarQube",
-        "Trivy",
+      "github": "https://github.com/Sielxiter/BIGDATA-Sentiment-",
+      "demo": null
+    },
+    {
+      "name": "Candidatures UCA",
+      "label": "Recrutement universitaire",
+      "context": "Stage Code212 · 2026",
+      "category": "Full Stack / CI/CD",
+      "need": "Accompagner le dépôt et la gestion des candidatures des enseignants universitaires.",
+      "contribution": "Prise en charge du projet, de l’analyse des besoins avec le service RH jusqu’à la mise en production sur les serveurs de l’UCA.",
+      "features": [
+        "Quatre espaces selon les rôles des utilisateurs",
+        "Authentification et contrôle d’accès",
+        "API REST et règles métier Spring Boot",
+        "Déploiement Docker et automatisation GitHub Actions"
+      ],
+      "technologies": [
+        "Spring Boot",
+        "MySQL",
         "Docker",
-        "Docker Compose",
-        "Kubernetes",
-        "Helm",
-        "Nginx",
-        "Terraform",
-        "Prometheus",
-        "Grafana"
-      ]
-    }
-  ],
-  projects: [
-    {
-      name: "Code212",
-      label: "Réservation de ressources",
-      context: "Stage PFA · 2026",
-      category: "Microservices / DevOps",
-      need: "Permettre au centre Code212 de gérer ses ressources et leurs réservations.",
-      contribution:
-        "Développement des services de ressources et de réservation, intégration de la sécurité et de l’environnement conteneurisé, dans le cadre de mon stage PFA.",
-      features: [
-        "Gestion des ressources et des réservations",
-        "Contrôle des conflits de réservation",
-        "Authentification Keycloak et API documentées",
-        "Découverte de services et routage centralisé"
+        "GitHub Actions"
       ],
-      technologies: [
-        "Java 17",
+      "github": null,
+      "demo": "https://cand-mch2pes.uca.ma"
+    },
+    {
+      "name": "Plateforme E-Learning",
+      "label": "Services de formation",
+      "context": "Stage Cdigital · 2026",
+      "category": "Microservices / React",
+      "need": "Développer une plateforme de formation avec des services métier et une interface React.",
+      "contribution": "Participation au développement de trois microservices Spring Boot, des interfaces React et du déploiement des services sur AWS.",
+      "features": [
+        "API REST avec Spring Boot et Hibernate",
+        "Interfaces React, ShadCn et TailwindCSS",
+        "Stockage de fichiers sur AWS S3",
+        "Services conteneurisés sur AWS EC2"
+      ],
+      "technologies": [
         "Spring Boot",
-        "Spring Cloud",
-        "PostgreSQL",
-        "Keycloak",
-        "Docker Compose"
+        "React",
+        "MySQL",
+        "Docker",
+        "AWS"
       ],
-      github: "https://github.com/izmaoun/Code212",
-      demo: null
-    },
-    {
-      name: "Marketplace B2B",
-      label: "Entreprises & freelances",
-      context: "Projet de fin de semestre · 2026",
-      category: "Microservices / Temps réel",
-      need: "Mettre en relation des entreprises et des freelances autour de missions et de candidatures.",
-      contribution:
-        "Dans ce projet collectif, développement du service de messagerie WebSocket et connexion des services entreprise, freelance, administration et missions. Ces apports sont identifiables dans l’historique Git.",
-      features: [
-        "Publication de missions et gestion des candidatures",
-        "Profils entreprises et freelances",
-        "Conversations et messages en temps réel",
-        "Authentification et contrôle d’accès"
-      ],
-      technologies: [
-        "Spring Boot",
-        "PostgreSQL",
-        "MongoDB",
-        "Keycloak",
-        "WebSocket",
-        "Docker"
-      ],
-      github: "https://github.com/izmaoun/Marketplace",
-      demo: null
-    },
-    {
-      name: "E-banking 2.0",
-      label: "Services bancaires",
-      context: "Projet académique · 2025",
-      category: "Java / Angular",
-      need: "Proposer une interface web pour gérer des clients, leurs comptes et leurs opérations bancaires.",
-      contribution:
-        "Développement d’un backend REST Java / Spring et d’une interface Angular. Le dépôt consultable présente la gestion des comptes et les opérations de débit, crédit et virement.",
-      features: [
-        "Gestion des clients et des comptes",
-        "Débits, crédits et virements",
-        "Historique paginé des opérations",
-        "Interface Angular et environnement Docker"
-      ],
-      technologies: ["Spring Boot", "Angular", "MySQL", "Docker", "Nginx"],
-      github: "https://github.com/izmaoun/e-banking-V2",
-      demo: null
+      "github": null,
+      "demo": null
     }
   ],
-  education: [
+  "education": [
     {
-      school: "École Nationale des Sciences Appliquées de Marrakech",
-      degree: "Parcours ingénieur en génie informatique",
-      period: "2022 – présent"
+      "school": "École Nationale des Sciences Appliquées de Marrakech",
+      "degree": "Cycle ingénieur en Génie Informatique",
+      "period": "2024 – présent"
     },
     {
-      school: "Faculté des Sciences et Techniques de Marrakech",
-      degree: "Filière MPCI",
-      period: "2021 – 2022"
+      "school": "ENSA Marrakech",
+      "degree": "Classes Préparatoires Intégrées",
+      "period": "2022 – 2024"
     },
     {
-      school: "Baccalauréat",
-      degree: "Sciences physiques et chimie",
-      period: "2021"
+      "school": "Lycée Abdellah Ben Brahim, Maroc",
+      "degree": "Baccalauréat Sciences Physiques",
+      "period": "2021 – 2022"
     }
   ],
-  engagement: {
-    role: "Chef de cellule Projets",
-    organization: "Club de Filière (CGI)",
-    period: "Septembre 2025 – septembre 2026",
-    description:
-      "Supervision et coordination des projets du club, accompagnement des membres et organisation d’événements scientifiques."
-  },
-  certifications: [
-    "365 DataScience · Git and GitHub",
-    "365 DataScience · Advanced SQL"
-  ],
-  training:
-    "Oracle MyLearn · Comprehensive Java SE 17 Development — formation en cours.",
-  languages: [
-    "Tamazight · langue maternelle",
+  "engagement": null,
+  "certifications": [],
+  "training": null,
+  "languages": [
     "Arabe · langue maternelle",
     "Français · courant",
-    "Anglais · intermédiaire"
+    "Anglais · courant"
   ],
-  interests: ["Athlétisme"],
-  softSkills: ["Résolution de problèmes", "Travail en équipe", "Adaptabilité"]
+  "interests": [],
+  "softSkills": [
+    "Autonomie",
+    "Rigueur",
+    "Sens de la qualité"
+  ]
 };

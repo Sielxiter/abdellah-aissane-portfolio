@@ -24,37 +24,12 @@ export default function Education() {
       <section
         className="main"
         id="engagements"
-        aria-labelledby="engagements-title"
+        aria-label={ui.languages}
       >
-        <h2 className="skills-heading" id="engagements-title">
-          {ui.engagement}
-        </h2>
-        <div className="engagement-columns">
-          <article>
-            <h3>{p.engagement.role}</h3>
-            <p>
-              {p.engagement.organization} · {p.engagement.period}
-            </p>
-            <p className="subTitle">{p.engagement.description}</p>
-          </article>
-          <article>
-            <h3>{ui.certifications}</h3>
-            <ul className="subTitle">
-              {p.certifications.map(c => (
-                <li key={c}>{c}</li>
-              ))}
-            </ul>
-            <p className="subTitle">{p.training}</p>
-          </article>
-        </div>
         <div className="profile-details">
           <article aria-labelledby="languages-title">
             <h3 id="languages-title">{ui.languages}</h3>
             <Tags items={p.languages} />
-          </article>
-          <article aria-labelledby="interests-title">
-            <h3 id="interests-title">{ui.interests}</h3>
-            <Tags items={p.interests} />
           </article>
           <article aria-labelledby="qualities-title">
             <h3 id="qualities-title">{ui.qualities}</h3>

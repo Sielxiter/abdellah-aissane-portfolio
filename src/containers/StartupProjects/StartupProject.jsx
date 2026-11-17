@@ -31,9 +31,9 @@ export default function StartupProject() {
               <Tags items={project.technologies} />
             </div>
             <div className="project-card-footer">
-              <ExternalLink className="project-tag" href={project.github}>
+              {project.github && <ExternalLink className="project-tag" href={project.github}>
                 {ui.code} ↗
-              </ExternalLink>
+              </ExternalLink>}
               {project.demo && (
                 <ExternalLink className="project-tag" href={project.demo}>
                   {ui.demo} ↗
