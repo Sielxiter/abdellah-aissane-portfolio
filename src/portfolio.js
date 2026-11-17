@@ -10,7 +10,7 @@ export const portfolio = {
   "github": "https://github.com/Sielxiter",
   "linkedin": null,
   "cv": null,
-  "photo": null,
+  "photo": "images/abdellah-aissane.jpg",
   "intro": "Je conçois des API Spring Boot et des interfaces React, puis je les accompagne jusqu’au déploiement avec Docker et AWS.",
   "about": [
     "Élève ingénieur à l’ENSA Marrakech, je me spécialise dans le développement Full Stack Java / Spring Boot. J’aime partir d’un besoin concret et construire une application utilisable, du backend à l’interface.",

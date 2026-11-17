@@ -781,3 +781,6 @@ html {
 .legal-navigation { display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap; }
 @media (min-width: 1101px) and (max-width: 1250px) { .header li a { font-size: 13px; padding-inline: 9px; } }
 @media (max-width: 767px) { .header .language-menu-item { display: inline-block; } }
+
+// Portrait fourni par Abdellah : proportions carrées conservées.
+.hero-portrait img { aspect-ratio: 1; object-position: center; }

@@ -32,8 +32,8 @@ export default function Contact() {
           <img
             src={asset(p.photo)}
             alt={ui.portrait}
-            width="1086"
-            height="1448"
+            width="400"
+            height="400"
             loading="lazy"
           />
         </div>}

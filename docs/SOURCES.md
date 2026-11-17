@@ -6,3 +6,5 @@
 - Les projets UCA et E-Learning sont décrits conformément au CV. Aucun lien vers un dépôt privé n’est publié. Le dépôt back-mchpes consulté contient un README Laravel générique et n’est pas utilisé pour justifier une stack Spring Boot.
 - Aucun profil LinkedIn, portrait, certification ou date de disponibilité n’a été inventé.
 - Template : izmaoun/amine-izmaoun-portfolio, adapté de saadpasta/developerFolio.
+
+- Portrait : photo img.jpeg fournie par Abdellah le 17 novembre 2026, utilisée sans retouche dans les sections accueil et contact.

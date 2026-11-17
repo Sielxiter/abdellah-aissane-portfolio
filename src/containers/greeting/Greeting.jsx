@@ -1,5 +1,4 @@
 import React from "react";
-import illustration from "../../assets/images/manOnTable.svg";
 import {useLanguage} from "../../i18n/LanguageContext";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {asset} from "../../components/shared/Shared";
@@ -34,12 +33,12 @@ export default function Greeting() {
             </a>
           </div>
         </div>
-        <div className="greeting-image-div">
+        <div className="greeting-image-div hero-portrait">
           <img
-            src={illustration}
-            width="800"
-            height="600"
-            alt=""
+            src={asset(p.photo)}
+            width="400"
+            height="400"
+            alt={ui.portrait}
             fetchPriority="high"
           />
         </div>
